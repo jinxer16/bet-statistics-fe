@@ -108,7 +108,8 @@ export default function Entry() {
         const entranceFeeFromCall = (await getEntranceFee()).toString()
         const lastUnemploymentRateFromCall = (await getLastUnemploymentRate()).toString()
         const numberOfLastWinnersFromCall = (await getNumberOfLastWinners()).toString()
-        const lastRewardPerPersonFromCall = (await getLastRewardPerPerson()).toString()
+        const rewardObj = (await getLastRewardPerPerson())
+        const lastRewardPerPersonFromCall = rewardObj ? rewardObj.toString() : "N/A"
         // console.log("from call: ", entranceFeeFromCall, lastRewardPerPersonFromCall)
         // setLastUpdatedAt(lastUpdatedAtFromCall)
         setEntranceFee(entranceFeeFromCall)
