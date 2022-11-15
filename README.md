@@ -1,5 +1,5 @@
 This is a frontend implementation for bet statistics web3 application.
-For the smart/con, please refer to [bet statistics repo](https://github.com/nowissan/bet-statistics)
+For the smart contract, please refer to [bet statistics repo](https://github.com/nowissan/bet-statistics)
 
 
 ## Getting Started
